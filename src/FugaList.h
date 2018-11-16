@@ -34,12 +34,14 @@ class FugaList {
   void initialize();
   int getSize();
   int getIntegersSize();
+  int getFugaSubstantialSize();
   void deleteFuga();
   void deleteFugaInteger();
  protected:
  private:
   std::vector<Fuga*> fugas;
   std::vector<int> fugaIntegers;
+  std::vector<Fuga> fugaSubstantial;
 };
 
 #endif  // FUGALIST_H_

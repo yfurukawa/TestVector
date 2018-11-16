@@ -31,8 +31,11 @@ FugaList::~FugaList() {
 @attention  なし
 --------------------------------------------------*/
 void FugaList::initialize() {
-	fugas.push_back(new Fuga());
-	fugaIntegers.push_back(1);
+	for(int count = 0; count < 5; ++count){
+		fugas.push_back(new Fuga());
+		fugaIntegers.push_back(1);
+		fugaSubstantial.push_back(Fuga());
+	}
 }
 
 /*!------------------------------------------------
@@ -68,6 +71,10 @@ int FugaList::getIntegersSize() {
 @attention  なし
 --------------------------------------------------*/
 void FugaList::deleteFuga() {
+}
+
+int FugaList::getFugaSubstantialSize() {
+	return fugaSubstantial.size();
 }
 
 /*!------------------------------------------------

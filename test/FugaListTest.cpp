@@ -17,14 +17,20 @@ void FugaListTest::TearDown() {
 	delete sut;
 }
 
-TEST_F (FugaListTest, testGetInstance_OneInstance) {
+TEST_F (FugaListTest, testGetInstance_FiveInstance) {
 /* Write a test code here. */
 	sut->initialize();
-	EXPECT_EQ(1,sut->getSize());
+	EXPECT_EQ(5,sut->getSize());
 }
 
-TEST_F (FugaListTest, testGetFugaInterger_OneInstance) {
+TEST_F (FugaListTest, testGetFugaInterger_FiveInstance) {
 /* Write a test code here. */
 	sut->initialize();
-	EXPECT_EQ(1,sut->getIntegersSize());
+	EXPECT_EQ(5,sut->getIntegersSize());
+}
+
+TEST_F (FugaListTest, testGetFugaSubstantial_FiveInstance) {
+/* Write a test code here. */
+	sut->initialize();
+	EXPECT_EQ(5,sut->getFugaSubstantialSize());
 }
