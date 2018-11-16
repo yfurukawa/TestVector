@@ -34,3 +34,10 @@ TEST_F (FugaListTest, testGetFugaSubstantial_FiveInstance) {
 	sut->initialize();
 	EXPECT_EQ(5,sut->getFugaSubstantialSize());
 }
+
+TEST_F (FugaListTest, testGetInstance_FourInstance) {
+/* Write a test code here. */
+	sut->initialize();
+	sut->deleteFuga();
+	EXPECT_EQ(4,sut->getSize());
+}

@@ -71,6 +71,7 @@ int FugaList::getIntegersSize() {
 @attention  なし
 --------------------------------------------------*/
 void FugaList::deleteFuga() {
+	fugas.pop_back();
 }
 
 int FugaList::getFugaSubstantialSize() {
