@@ -87,4 +87,5 @@ int FugaList::getFugaSubstantialSize() {
 @attention  なし
 --------------------------------------------------*/
 void FugaList::deleteFugaInteger() {
+	fugaIntegers.pop_back();
 }

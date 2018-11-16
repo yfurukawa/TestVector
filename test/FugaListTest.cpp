@@ -41,3 +41,11 @@ TEST_F (FugaListTest, testGetInstance_FourInstance) {
 	sut->deleteFuga();
 	EXPECT_EQ(4,sut->getSize());
 }
+
+TEST_F (FugaListTest, testGetFugaInterger_FourInstance) {
+/* Write a test code here. */
+	sut->initialize();
+	sut->deleteFugaInteger();
+	EXPECT_EQ(4,sut->getIntegersSize());
+}
+
