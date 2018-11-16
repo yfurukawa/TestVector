@@ -37,6 +37,7 @@ class FugaList {
   int getFugaSubstantialSize();
   void deleteFuga();
   void deleteFugaInteger();
+  void deleteFugaSubstantial();
  protected:
  private:
   std::vector<Fuga*> fugas;

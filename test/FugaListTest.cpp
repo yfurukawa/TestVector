@@ -49,3 +49,9 @@ TEST_F (FugaListTest, testGetFugaInterger_FourInstance) {
 	EXPECT_EQ(4,sut->getIntegersSize());
 }
 
+TEST_F (FugaListTest, testGetFugaSubstantial_FourInstance) {
+/* Write a test code here. */
+	sut->initialize();
+	sut->deleteFugaSubstantial();
+	EXPECT_EQ(4,sut->getFugaSubstantialSize());
+}

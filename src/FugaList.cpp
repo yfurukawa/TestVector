@@ -89,3 +89,7 @@ int FugaList::getFugaSubstantialSize() {
 void FugaList::deleteFugaInteger() {
 	fugaIntegers.pop_back();
 }
+
+void FugaList::deleteFugaSubstantial() {
+	fugaSubstantial.pop_back();
+}
