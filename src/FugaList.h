@@ -8,6 +8,8 @@
 #define FUGALIST_H_
 
 // インクルードファイル ================================
+#include <vector>
+#include "Fuga.h"
 
 // クラスの前方宣言 ====================================
 
@@ -29,9 +31,15 @@ class FugaList {
   FugaList();
   //! Destructor
   virtual ~FugaList();
-
+  void initialize();
+  int getSize();
+  int getIntegersSize();
+  void deleteFuga();
+  void deleteFugaInteger();
  protected:
  private:
+  std::vector<Fuga*> fugas;
+  std::vector<int> fugaIntegers;
 };
 
 #endif  // FUGALIST_H_
